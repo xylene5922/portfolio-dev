@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio - Marian</title>
+
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200 p-6">
+  <main class="max-w-4xl mx-auto space-y-10 text-center">
+    <!-- Bouton de changement de thème -->
+    <div class="text-right">
+      <button onclick="toggleTheme()" class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+        🌙 Changer le thème
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <h1 class="text-4xl font-bold mb-2 text-purple-800 dark:text-purple-300">Marian Okolski - Testeur </h1>
+      <p class="text-lg text-gray-700 dark:text-gray-300">Testeur passionné par la création de solutions web performantes et évolutives. Fort d'une expertise en [front-end/back-end/full-stack] et d'une approche orientée qualité, je conçois des applications robustes et maintenables. Curieux, rigoureux et en veille constante, j'aime relever les défis techniques et collaborer avec des équipes dynamiques..</p>
+    </header>
+
+    <!-- Compétences -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">🛠️ Compétences Techniques</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">HTML, CSS, JavaScript, TypeScript</div>
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">React, Vue.js, Angular</div>
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">Python / PHP / Java / C#</div>
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">SQL / NoSQL (MongoDB, PostgreSQL)</div>
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">Git / GitHub / GitLab /
+Docker / CI-CD / Linux</div>
+        <div class="bg-white dark:bg-gray-700 p-4 shadow-md">Tests unitaires et intégration (Jest, PHPUnit, Pytest)</div>
+      </div>
+    </section>
+
+    <!-- Expériences -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">💼 Expériences</h2>
+      <div class="bg-white dark:bg-gray-700 p-4 shadow-lg text-left">
+        <h3 class="font-bold text-purple-700 dark:text-purple-300">Atos-(remplacement)</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">2019-2024 </p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>Création d'un site web et administration serveur pour un projet.
+          </li>
+          <li>Maitrise d'outils OSINT pour la collecte de l'analyse de données dans des environnements complexes</li>
+          <li>Test d'intrusion avec Xray et Gerkin,correction de vulnérabilités chez une dizaine de clients.</li>
+          <li>Automatisation de taches avec n8n pour les phases d'audit et de mises a jours.
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 shadow-lg text-left mt-4">
+        <h3 class="font-bold text-purple-700 dark:text-purple-300">Administrateur réseaux - Universite de Lille2</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">2025-2019</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>Participation à des tests de pénétration et rédaction des rapports d'analyse. Analyse des risques liés aux applications web en suivant le framework OWASP.</li>
+          <li>Proposition d'améliorations pour la conformité avec les normes de sécurité. .
+</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">🚀 Projets</h2>
+      <div class="bg-white dark:bg-gray-700 p-4 shadow-md">
+        <h3 class="font-bold text-purple-700 dark:text-purple-300">DevBoard</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">React, TailwindCSS, Firebase</p>
+        <p class="mt-1">Tableau de bord pour testeur</p>
+        <a href="#" class="text-blue-600 dark:text-blue-400">Voir sur GitHub</a>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 p-4 shadow-md mt-4">
+        <h3 class="font-bold text-purple-700 dark:text-purple-300">API Vgilante</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Node.js, Express,OpenWeatherMap API</p>
+        <p class="mt-1">API sécurité téléhpone portable avec ses fonctionnalités</p>
+        <a href="#" class="text-blue-600 dark:text-blue-400">Voir sur GitHub</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-300">📫 Me Contacter</h2>
+      <div class="space-y-1 text-purple-900 dark:text-purple-200">
+        <p>Email : <a href="mailto:artemis.dev@email.com" class="text-blue-600 dark:text-blue-400">marian.okolski@protonmail.com</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/marian-artemis-b1a615172/" class="text-blue-600 dark:text-blue-400">linkedin.com/in/marian-dev</a></p>
+        <p>GitHub : <a href="https://github.com/artemis62820" class="text-blue-600 dark:text-blue-400">github.com/marian-dev</a></p>
+        <p> curriculum vitae : <a href="https://artemis62820.github.io/CV-inf/" class="text-blue-600 dark:text-blue-400">marian.dev</a></p>
+         <p> chat : <a href="https://artemisflore.app.n8n.cloud/webhook/53c136fe-3e77-4709-a143-fe82746dd8b6/chat" class="text-blue-600 dark:text-blue-400">n8n.io/in/marian.dev</a></p>
+      </div
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section>
+      <h2 class="text-2xl font-semibold mt-10 mb-4 text-blue-700 dark:text-blue-300">📨 Envoyer un message</h2>
+      <form class="bg-white dark:bg-gray-700 p-6 shadow-md rounded space-y-4 text-left">
+
+      <p> Contact : <a href="https://formsubmit.co/el/dugoze" class="text-blue-600 dark:text-blue-400">marian.dmessage</a></p>
+     
+</html>
+
+
+
